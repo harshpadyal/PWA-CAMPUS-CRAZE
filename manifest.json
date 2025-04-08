@@ -1,0 +1,22 @@
+{
+  "name": "CampusCraze - Cool Stuff for College Life",
+  "short_name": "CampusCraze",
+  "description": "Budget-friendly stationery, hostel decor, and fashion for college students",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6f61",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

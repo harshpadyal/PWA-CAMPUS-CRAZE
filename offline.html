@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusCraze - Offline</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Chalkduster', sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f4e5;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: 3px dashed #ff6b6b;
+    }
+    
+    h1 {
+      color: #ff6b6b;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      color: #555;
+      margin-top: 0;
+    }
+    
+    .emoji {
+      font-size: 4rem;
+      margin: 20px 0;
+    }
+    
+    .message {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    
+    .action-btn {
+      background-color: #4ecdc4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: bold;
+    }
+    
+    .action-btn:hover {
+      background-color: #ff6b6b;
+      transform: scale(1.05);
+    }
+    
+    .doodles {
+      margin: 30px 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .doodle {
+      width: 60px;
+      height: 60px;
+      background-color: #ffe66d;
+      margin: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      transform: rotate(-5deg);
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+      
+      .container {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .emoji {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CampusCraze</h1>
+    <h2>Whoops! You're Offline</h2>
+    
+    <div class="emoji">📵</div>
+    
+    <div class="message">
+      <p>Looks like your internet connection is pulling an all-nighter! 💤</p>
+      <p>Check your Wi-Fi or data connection and try again.</p>
+    </div>
+    
+    <button class="action-btn" onclick="window.location.reload()">
+      Retry Connection
+    </button>
+    
+    <div class="doodles">
+      <div class="doodle">📚</div>
+      <div class="doodle">🎒</div>
+      <div class="doodle">✏️</div>
+      <div class="doodle">💻</div>
+      <div class="doodle">☕</div>
+    </div>
+    
+    <div class="footer">
+      <p>CampusCraze - Your one-stop shop for budget stationery, quirky hostel decor, and affordable fashion!</p>
+    </div>
+  </div>
+  
+  <script>
+    // Check if the user is back online
+    window.addEventListener('online', () => {
+      window.location.reload();
+    });
+    
+    // Add a little animation to the doodles
+    const doodles = document.querySelectorAll('.doodle');
+    doodles.forEach((doodle, index) => {
+      doodle.style.transform = `rotate(${(index % 2 === 0 ? 1 : -1) * Math.random() * 15}deg)`;
+      
+      // Add hover effect
+      doodle.addEventListener('mouseover', () => {
+        doodle.style.transform = 'scale(1.2) rotate(0deg)';
+      });
+      
+      doodle.addEventListener('mouseout', () => {
+        doodle.style.transform = `rotate(${(index % 2 === 0 ? 1 : -1) * Math.random() * 15}deg)`;
+      });
+    });
+  </script>
+</body>
+</html>

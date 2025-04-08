@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CampusCraze - Budget-friendly stationery, hostel decor and fashion for college students">
+  <meta name="theme-color" content="#ff6f61">
+  
+  <title>CampusCraze – Cool Stuff for College Life</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- PWA requirements -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  
+  <!-- For better SEO and sharing -->
+  <meta property="og:title" content="CampusCraze – Cool Stuff for College Life">
+  <meta property="og:description" content="From hostel décor to budget fashion — shop everything you need to live your best college life!">
+  <meta property="og:image" content="images/og-image.jpg">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo" aria-label="CampusCraze Logo">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>CampusCraze</span>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav>
+        <ul>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#bundles">Bundles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Campus Life, Upgraded! 🎒</h1>
+          <p>From hostel décor to budget fashion — shop everything you need to live your best college life!</p>
+          <a href="#products" class="btn primary-btn">Shop Now</a>
+        </div>
+        <div class="hero-img">
+          <img src="images/college-vibes.webp" alt="Students enjoying campus life with CampusCraze products" width="500" height="375" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Top Picks for Students</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="images/stationery.webp" alt="Collection of colorful notebooks and pens" width="280" height="200" loading="lazy">
+            <h3>Budget Stationery</h3>
+            <p>Colorful notebooks, funky pens & more starting at just ₹99.</p>
+            <a href="#" class="btn secondary-btn">View Collection</a>
+          </article>
+          
+          <article class="product-card">
+            <img src="images/decor.webp" alt="Stylish hostel room with fairy lights and posters" width="280" height="200" loading="lazy">
+            <h3>Hostel Decor</h3>
+            <p>Fairy lights, posters, & space-saving hacks to transform your room.</p>
+            <a href="#" class="btn secondary-btn">View Collection</a>
+          </article>
+          
+          <article class="product-card">
+            <img src="images/fashion.webp" alt="Students wearing trendy campus outfits" width="280" height="200" loading="lazy">
+            <h3>Campus Fashion</h3>
+            <p>Trendy tees, comfy hoodies & backpacks that won't break the bank.</p>
+            <a href="#" class="btn secondary-btn">View Collection</a>
+          </article>
+          
+          <article class="product-card">
+            <img src="images/tech.webp" alt="Budget-friendly tech gadgets for students" width="280" height="200" loading="lazy">
+            <h3>Student Tech</h3>
+            <p>Affordable gadgets, phone accessories & study helpers.</p>
+            <a href="#" class="btn secondary-btn">View Collection</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="bundles" class="bundles">
+      <div class="container">
+        <h2>🔥 Crazy Combos Under ₹499</h2>
+        <p>Affordable packs for students who love saving!</p>
+        
+        <div class="bundle-cards">
+          <article class="bundle-card">
+            <img src="images/study-bundle.webp" alt="Study essentials bundle" width="300" height="200" loading="lazy">
+            <h3>Study Buddy Pack</h3>
+            <p>5 notebooks, 10 pens, sticky notes & highlighters</p>
+            <p class="price">₹399 <span class="original-price">₹650</span></p>
+            <a href="#" class="btn primary-btn">Add to Cart</a>
+          </article>
+          
+          <article class="bundle-card">
+            <img src="images/decor-bundle.webp" alt="Room decoration bundle" width="300" height="200" loading="lazy">
+            <h3>Room Makeover Kit</h3>
+            <p>Fairy lights, 3 posters, photo clips & wall hooks</p>
+            <p class="price">₹499 <span class="original-price">₹750</span></p>
+            <a href="#" class="btn primary-btn">Add to Cart</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2>Hear From Our Craze Crew</h2>
+        
+        <div class="testimonial-carousel">
+          <div class="testimonial">
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"The decor kit totally changed my boring hostel room. Everyone compliments it now!"</p>
+            <div class="student-info">
+              <img src="images/avatar-simran.webp" alt="" width="50" height="50" loading="lazy">
+              <span>Simran J., Delhi University</span>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"So affordable and trendy — best place to shop for broke students like me 😂"</p>
+            <div class="student-info">
+              <img src="images/avatar-rishi.webp" alt="" width="50" height="50" loading="lazy">
+              <span>Rishi T., BITS Pilani</span>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p>"The stationery bundle saved me so much money! Quick delivery too."</p>
+            <div class="student-info">
+              <img src="images/avatar-priya.webp" alt="" width="50" height="50" loading="lazy">
+              <span>Priya M., IIT Bombay</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-nav">
+          <button class="prev" aria-label="Previous testimonial">←</button>
+          <button class="next" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="app-promo">
+      <div class="container">
+        <div class="app-text">
+          <h2>Get the CampusCraze App!</h2>
+          <p>Shop faster, track orders & get exclusive app-only deals.</p>
+          <div class="app-buttons">
+            <a href="#" class="app-btn">
+              <img src="images/google-play.svg" alt="Get it on Google Play" width="150" height="45" loading="lazy">
+            </a>
+            <a href="#" class="app-btn">
+              <img src="images/app-store.svg" alt="Download on the App Store" width="150" height="45" loading="lazy">
+            </a>
+          </div>
+        </div>
+        <div class="app-img">
+          <img src="images/app-mockup.webp" alt="CampusCraze mobile app screenshot" width="250" height="500" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="logo">
+            <img src="images/logo.svg" alt="" width="30" height="30">
+            <span>CampusCraze</span>
+          </div>
+          <p>Making college life cooler without breaking the bank since 2023.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#bundles">Bundles</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:hello@campuscraze.com">hello@campuscraze.com</a></p>
+          <p>WhatsApp: <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+        
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+              <img src="images/instagram.svg" alt="" width="24" height="24">
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img src="images/youtube.svg" alt="" width="24" height="24">
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="images/twitter.svg" alt="" width="24" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 CampusCraze. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered! Scope:",
+                registration.scope
+              );
+
+
+              // Request Push Notification Permission
+              if ("PushManager" in window) {
+                Notification.requestPermission().then((permission) => {
+                  if (permission === "granted") {
+                    console.log("Push notifications granted.");
+                  } else {
+                    console.log("Push notifications denied.");
+                  }
+                });
+              }
+
+
+              // Register Background Sync
+              if ("SyncManager" in window) {
+                navigator.serviceWorker.ready.then((swReg) => {
+                  swReg.sync
+                    .register("sync-data")
+                    .then(() => {
+                      console.log("Sync registered");
+                    })
+                    .catch((err) => {
+                      console.log("Sync registration failed:", err);
+                    });
+                });
+              }
+            })
+            .catch((error) => {
+              console.log("Service Worker registration failed:", error);
+            });
+        });
+      }
+  </script>
+</body>
+</html>
